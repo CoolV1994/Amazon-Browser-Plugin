@@ -1,0 +1,19 @@
+{
+
+  "description": "Adds Affiliate Code to Amazon Links.",
+  "manifest_version": 2,
+  "name": "Amazon Affiliate Link",
+  "version": "1.0",
+  "homepage_url": "https://github.com/Coolv1994/Amazon-Browser-Plugin/",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.com/*"],
+      "js": ["amazon.js"]
+    }
+  ]
+
+}
